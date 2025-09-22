@@ -1,6 +1,7 @@
 const accountid = 1233
 let accountemail = "abc@google.com"
 var accountPasaword = "321"
+const b="Rohan"
 accountCity = "Moradabad"
 
 // accountid = 23  constent variable is not change 

@@ -27,5 +27,5 @@
 // let a="Rohan%Babu"
 // console.log(a.replace('%','-'))
 
-let a='RohanBabuChandravanshi'
-console.log(a.split(''))
+// let a='RohanBabuChandravanshi'
+// console.log(a.split(''))

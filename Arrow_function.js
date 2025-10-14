@@ -45,3 +45,30 @@
     return num1+ num2}*/
 // const a=(num1,num2)=>(num1+num2)
 // console.log(a(9,6))
+
+/* IIFE if immediate function invoke then we have to use double parentheses ()() the first one is for function definetion end the second one is for function execution and one importent thing is here we have more then one block of IIFE function then we have to use ';' because it will explicitly seprate the code example
+(function a(){console.log('hey')})();
+(function two(){console.log('hi)})() */
+
+// function a(){
+//     console.log('helo bhai Rohan')
+// }
+// a()
+
+//  (()=>{
+//     console.log('heyy babyy')
+//  })
+//  ()
+
+// (function one(){
+//     console.log('heyy Rohan')
+// })
+// ()
+
+// function one(){
+//     console.log('hii')
+// }
+// (one())
+
+// (()=>{console.log('dishu')})();
+// (()=>{console.log('babu')})()

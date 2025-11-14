@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.Dom File</title>
+</head>
+
+<script>
+    window.onload = function() {
+    const div=document.createElement('div')
+    console.log(div)
+    div.className='num'
+    // div.id='1num' OR
+    div.id=Math.round(Math.random()*10+1)
+    div.setAttribute("title","learning")
+    div.style.backgroundColor="red"
+    div.style.padding="12px"
+    const addtext=document.createTextNode("Kya Hal hai")
+    div.appendChild(addtext)
+    
+    document.body.appendChild(div)
+    }
+    // window.onload makes sure your JavaScript runs only after the entire webpage (HTML, body, images, CSS) has finished loading.
+    // yha mere code m error thi kyoki mne <script> phle use kr liya tha body se phle so mujhe window.load function use krna pda  
+</script>
+
+<body style="background-color:black; color:white">
+    
+</body>
+<!-- or const div=document.createElement('div')
+    console.log(div)
+    div.className='num'
+    // div.id='1num' OR
+    div.id=Math.round(Math.random()*10+1)
+    div.setAttribute("title","learning")
+    div.style.backgroundColor="red"
+    div.style.padding="12px"
+    const addtext=document.createTextNode("Kya Hal hai")
+    div.appendChild(addtext)
+    
+    document.body.appendChild(div) ye code yha pr run hoga without window.load
+  -->
+</html>

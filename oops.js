@@ -41,6 +41,8 @@ function User(username, loggedIn, verify){
 3️⃣ Bind this to the new object
 4️⃣ Return the object (unless you return another object)
 **Arrow functions don’t have their own this
+
+learn about 'instanceof'
 */ 
 
 // const userone=new User('Rohan', 19, true)

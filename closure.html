@@ -14,7 +14,9 @@
         return function(){
             document.body.style.backgroundColor=`${color}`
         }
-    }   /*here we use clouser with lexcal function */
+    }   /*here we use clouser with lexcal function 
+    lexical function = it mean inner fuction ko outer fuction ka access hota h means uski sari properiese ko access kr skta hai innere function
+    closure = here return keyword use hota h and ye pura inner fuction ko rreturn krta h to sath m outer functionn bhi return ho jata h becuse innere fuction ko outer function ka access hota h so we say it retunr lexican fuction */
     document.getElementById('orange').onclick=clickhandler('orange')
        document.getElementById('green').onclick=clickhandler('green')
 </script>

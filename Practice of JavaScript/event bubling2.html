@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event bubling</title>
+    <style>
+        .child{
+            background-color:yellowgreen;
+            border:2px solid black;
+            padding: 34px;
+            margin:23px;
+            cursor: pointer;
+        }
+              .childcontainer{
+            background-color:yellow;
+            border:2px solid black;
+            padding: 34px;
+            margin:23px;
+            cursor: pointer;
+        }
+              .container{
+            background-color:green;
+            border:2px solid black;
+            padding: 34px;
+            margin:23px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="childcontainer">
+            <div class="child">I am a div</div>
+        </section>
+    </div>
+    <script>
+        document.querySelector('.container').addEventListener('click',() => {
+            alert('container was clicked')
+        })
+           document.querySelector('.childcontainer').addEventListener('click',() => {
+            alert('childcontainer was clicked')
+        })
+                   document.querySelector('.child').addEventListener('click',(e) => {
+                    e.stopPropagation()/* use for stoping propogation*/
+            alert('child was clicked')
+        })
+        setInterval(() =>{
+            document.querySelector('.childcontainer').style.background='red'
+        },3000)
+        /*setTimeOut = clearTimeout
+        setInterval= clearInterval*/
+    </script>
+</body>
+</html>

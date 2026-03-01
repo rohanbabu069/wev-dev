@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insertion in Array</title>
 </head>
-<script src="02_insertion_Array.js">
+
+
+<body>
+    <input type="text" placeholder="enter position" id="position">
+    <input type="text" placeholder="enter number" id="newEl">
+    <button onclick="insertEl()">Insert </button>
+</body>
+<script>
         let arr = [10, 20, 30, 40, 50, 70, 80, 90]
 
-function getElement() {
-        let position = document.getElementById('position').value
-        let el = document.getElementById('newEl').value
+function insertEl() {
+      let arr = [10, 20, 30, 40, 50, 70, 80, 90]
+        let position = parseInt(document.getElementById('position').value)
+        let el =  parseInt(document.getElementById('newEl').value)
         for (let i = arr.length - 1; i >= 0; i--) {
 
             if (i >= position) {
@@ -22,14 +30,9 @@ function getElement() {
                 }
             }
         }
-        console.log(arr)
+        console.warn(arr)
     }
 </script>
 
-<body>
-    <input type="text" placeholder="enter position" id="position">
-    <input type="text" placeholder="enter number" id="newEl">
-    <button onclick="getElement()">Insert </button>
-</body>
 
 </html>

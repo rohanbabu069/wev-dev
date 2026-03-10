@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching In DSA</title>
+</head>
+<script>
+    // let arr=[10,20,30,40,50,60,70,80,90]
+    // let item =60
+    // // let index=undefined
+    // for(let i=0;i<arr.length-1;i++){
+    //     // console.log(arr[i])
+    //     if(arr[i]==item){
+    //      index=i
+    //      break;   
+    //     }
+    // }
+    // console.log(index)
+    // ------------ with the help of by defaault function------------
+    // console.log(arr.indexOf(item))
+    // arr.splice(2,1)
+    // arr.splice(2,2) /*here first 2 number show is index and second 2 number tells that how many element you want to delete*/
+    // console.log(arr)
+    function searchElement(){
+        let arr=[10,20,30,40,50,60,70,80,90]
+        let ele=document.getElementById('searchEl').value
+        let index=undefined
+        for(let i=0;i<=arr.length-1;i++){
+            // console.log(arr[i])
+            if(arr[i]==parseInt(ele)){
+             index=i
+             break;
+            }
+        }
+        console.log(index)
+    }
+    
+</script>
+<body>
+    <input type="text" placeholder="enter number" id="searchEl">
+    <button onclick="searchElement()">Search Element</button>
+</body>
+</html>

@@ -1,0 +1,1 @@
+arr3.push(arr2[a2])

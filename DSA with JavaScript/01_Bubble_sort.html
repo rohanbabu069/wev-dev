@@ -1,0 +1,176 @@
+//------------------------------------------------- whit for loop --------------------------------------
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_Bubble_Sort</title>
+</head>
+<script>
+    let arr =[45,80,32,15];
+    for(i=0;i<arr.length;i++){
+        for(j=0;j<arr.length;j++){
+            if(arr[j]>arr[j+1])
+        {   
+         let temp=arr[j];
+         arr[j]=arr[j+1];
+         arr[j+1]=temp;
+        }
+    }
+}
+console.log(arr)
+</script>
+<body>
+    
+</body>
+</html> -->
+
+/*-------------------------- with for loop ------------------------------------------------------------- */
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let arr1=[45,32,4,95,16,14,84,54,]
+    for(i=0;i<arr1.length;i++){
+        for(j=0;j<arr1.length;j++){
+            if(arr1[j]>arr1[j+1]){
+                let var1=arr1[j]
+                arr1[j]=arr1[j+1]
+                arr1[j+1]= var1
+            }
+        }
+    }
+    console.log(arr1)
+</script>
+<body>
+    
+</body>
+</html> -->
+
+//------------------------- with for lopp -------------------------------------------------------
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let arr=[45,34,2,38,4,67,12,99,77,89,30]
+    for(j=0;j<arr.length;j++){
+            for(i=0;i<arr.length;i++){
+        // console.log(i)
+        if(arr[i]>arr[i+1]){
+            let var1=arr[i]
+            arr[i]=arr[i+1]
+            arr[i+1]=var1
+    }
+}
+    }
+    console.log(arr)
+</script>
+<body>
+    
+</body>
+</html> -->
+
+
+//---------------------- reverse with for loop----------------------------------------------
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let arr=[34,5,6,35,11,31,90,80,777,357,342]
+    for(i=arr.length;i>=0;i--){
+         console.log(arr)
+        for(j=arr.length;j>=0;j--){
+            if(arr[j]>arr[j-1]){
+               let var1=arr[j]  
+            arr[j]=arr[j-1]
+           
+            arr[j-1]=var1
+            }
+        }
+    }
+    console.log(arr)
+</script>
+<body>
+    
+</body>
+</html> -->
+
+//-------------------------- whit while loop ------------------------------------------------------
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let arr=[34,65,76,73,70,86,26,44,]
+    i=0
+    while(i<arr.length){
+       
+        j=0
+        while(j<arr.length){
+            if(arr[j]>arr[j+1]){
+                let var1=arr[j]
+                arr[j]=arr[j+1]
+                arr[j+1]=var1
+            }
+            j++
+        }
+     i++
+    }
+    console.log(arr)
+</script>
+<body>
+    
+</body>
+</html> -->
+
+//-------------------------------------- reverse whith while loop -------------------------------------------
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let arr=[34,2,32,45,646,78,76,908,334,433]
+    i=arr.length
+    while(i>=0){
+        i--
+        j=arr.length
+        while(j>=0){
+            if(arr[j]>arr[j-1]){
+                let var1=arr[j]
+                arr[j]=arr[j-1]
+                arr[j-1]=var1
+            }
+            j--
+        }
+    }
+    console.log(arr)
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;=swap');
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+header{
+    width:100vw;
+    height:100vh;
+    background-image:url("./images/img1.jpg");
+    background-position:bottom;
+    background-size: cover;
+}

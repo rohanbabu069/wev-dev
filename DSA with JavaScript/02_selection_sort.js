@@ -1,8 +1,8 @@
 let arr = [23, 54, 34, 3, 5, 43, 10, 21, 90]
 function selectionSort(data) {
-    for (i = 0; i < data.length; i++) {
+    for (let i = data.length-1; i >= 0; i--) {
         let minId = i
-        for (j = i + 1; j < data.length; j++) {
+        for (let j = i-1; j >=0; j--) {
             if (data[j] < data[minId]) {
                 minId = j
             } 

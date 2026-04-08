@@ -45,15 +45,15 @@
 // console.log("A", a)
 // console.log("A", a, 23)
 
-// const d=a.slice(1, 3)
+// const d=a.slice(2, 4)
 // console.log(d)
 // console.log(a)
 // const e=a.splice(1,3)
 // console.log(e)
 // console.log(a)
 
-// const a=[1,2,3,4,5]
-// const b=[6,7,8,9]
+const a=[1,2,3,4,5]
+const b=[6,7,8,9]
 // a.push(b)
 // console.log(a)
 // const c=a.push(b)

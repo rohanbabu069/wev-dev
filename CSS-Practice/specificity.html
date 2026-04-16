@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        * {
+            color: gray;
+        }
+
+        #title {
+            color: red;
+        }
+
+        /* .h1{
+            color: blue !important;
+        } */
+        h1 {
+            color: pink;
+        }
+
+        [data-x=a]{
+            color:aqua;
+        }/* 
+            This is attribute selector
+           */
+
+    </style>
+</head>
+
+<body>
+    <h1 id="title" class="h1" style="color:purple">Rohan babu</h1>
+    <h2 data-x="a">Hello World</h2>
+</body>
+</html>
+
+<!-- The Cascade Algorithm =>
+CSS stands for Cascading Stylesheets. The cascade is the algorithm for solving conflicts where multiple CSS rules apply |
+to an HTML element. It's the reason that the text of the button styled with the above CSS will be purple.
+
+Understanding the cascade algorithm helps you understand how the browser resolves conflicts like this. The cascade
+algorithm has 4 distinct stages.
+
+1. Position and order of appearance: the order in which your CSS rules appear
+2. Specificity: an algorithm that determines which CSS selector has the strongest match (inline > ID > class > element >
+universal)
+3. Origin: the order in which CSS appears and where it comes from, whether that is a browser style, CSS from a browser
+extension, or your authored CSS
+4. Importance: some CSS rules are weighted more heavily than others, especially with the !important rule type 
+Therefore, the Specificity Hierarchy -
+
+Inline Style > ID Selector > Class/Attribute/Pseudo-class > Element Selector > Universal Selector
+
+5. The !important flag in CSS is used to give a particular style rule the highest level of importance, overriding any other competing styles. When you add !important to a CSS rule, it will take precedence over other rules affecting the same element, regardless of their specificity. 
+An !important at the end of a CSS value gets a specificity score. This is the highest specificity that one individual item can get.
+-->

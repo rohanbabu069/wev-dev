@@ -11,10 +11,14 @@
     box-sizing:border-box;
 }
 
+a{
+    text-decoration: none;
+}
 header{
     width:100vw;
     height:100vh;
     background-image:url("./images/img1.jpg");
     background-position:bottom;
     background-size: cover;
+ 
 }

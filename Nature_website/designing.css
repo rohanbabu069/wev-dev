@@ -13,6 +13,7 @@
 
 a{
     text-decoration: none;
+    
 }
 header{
     width:100vw;
@@ -20,5 +21,39 @@ header{
     background-image:url("./images/img1.jpg");
     background-position:bottom;
     background-size: cover;
- 
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2{
+    font-size: 4vmin;
+}
+
+.line{
+    width: 150px;
+    height: 4px;
+    background: red;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+.ctn{
+    padding:8px 15px;
+    background-color: rgb(165, 45, 77);
+    border-radius: 30px;
+    color:whitesmoke;
 }

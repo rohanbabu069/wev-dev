@@ -1,0 +1,181 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Series</title>
+</head>
+<body>
+
+    <h2>Fibonacci Series</h2>
+
+    <input type="number" id="num" placeholder="Enter number of terms">
+
+    <button onclick="fibonacci()">Print Fibonacci</button>
+
+    <p id="result"></p>
+
+    <script>
+        function fibonacci() {
+
+            let n = Number(document.getElementById("num").value); -->
+
+            <!-- let first = 0;
+            let second = 1;
+            let output = "";
+
+            for (let i = 1; i <= n; i++) {
+
+                
+
+                let next = first + second;
+                output = output + first + " ";
+                first = second;
+                second = next;
+            }
+
+            document.getElementById("result").innerHTML = output; -->
+        
+    <!-- </script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Program</title>
+</head>
+<body>
+
+    <h2>Factorial Program</h2>
+
+    <input type="number" id="num" placeholder="Enter a number">
+
+    <button onclick="factorial()">Find Factorial</button>
+
+    <p id="result">factorial</p>
+
+    <script>
+     
+        function factorial() {
+
+            let n = Number(document.getElementById("num").value);
+
+            let fact = 1;
+
+            for (let i = 1; i <= n; i++) {
+                fact = fact * i;
+            }
+
+            document.getElementById("result").innerHTML = "Factorial = " + fact;
+        }
+
+    </script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<input type="number" id="num">
+
+<button onclick="prime()">Check Prime</button>
+
+<p id="result"></p>
+
+<script>
+
+function prime() {
+
+    let num = document.getElementById("num").value;
+    let count = 0;
+
+    for(let i = 2; i <= num; i++) {
+
+        if(num % i == 0) {
+            count++;
+        }
+
+    }
+
+    if(count == 2) {
+        document.getElementById("result").innerHTML = "Prime Number";
+    }
+    else {
+        document.getElementById("result").innerHTML = "Not Prime Number";
+    }
+
+}
+
+</script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="text" placeholder="Enter a string">
+
+<button onclick="reverseString()">Reverse</button>
+
+<p id="result"></p>
+
+<script>
+
+function reverseString() {
+
+    let str = document.getElementById("text").value;
+    let rev = "";
+
+    for(let i = str.length - 1; i >= 0; i--) {
+        rev = rev + str[i];
+    }
+
+    document.getElementById("result").innerHTML = rev;
+}
+
+</script>
+
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="text" placeholder="Enter a string">
+
+<button onclick="checkPalindrome()">Check</button>
+
+<p id="result"></p>
+
+<script>
+
+function checkPalindrome() {
+
+    let str = document.getElementById("text").value;
+    let rev = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        rev = rev + str[i];
+    }
+
+    if (str == rev) {
+        document.getElementById("result").innerHTML = "Palindrome";
+    } else {
+        document.getElementById("result").innerHTML = "Not Palindrome";
+    }
+
+}
+
+</script>
+
+</body>
+</html> -->
+

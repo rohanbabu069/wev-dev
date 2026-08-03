@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Doctor Appointment System</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#doctors">Doctors</a>
+        <a href="#appointment">Appointment</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Book Your Doctor Appointment Online</h2>
+    <p>Fast, Easy and Secure</p>
+</section>
+
+<section id="doctors">
+    <h2>Our Doctors</h2>
+
+    <div class="doctor-container">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Dr. Amit Sharma</h3>
+            <p>Cardiologist</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Dr. Priya Singh</h3>
+            <p>Dentist</p>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="">
+            <h3>Dr. Rahul Verma</h3>
+            <p>Neurologist</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="appointment">
+
+    <h2>Book Appointment</h2>
+
+    <form id="appointmentForm">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="email" id="email" placeholder="Email" required>
+
+        <select id="doctor">
+            <option>Dr. Amit Sharma</option>
+            <option>Dr. Priya Singh</option>
+            <option>Dr. Rahul Verma</option>
+        </select>
+
+        <input type="date" id="date" required>
+
+        <button type="submit">Book Appointment</button>
+
+    </form>
+
+    <div id="message"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

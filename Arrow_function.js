@@ -72,3 +72,92 @@
 
 // (()=>{console.log('dishu')})();
 // (()=>{console.log('babu')})()
+
+// const a=(b,c)=>(b+c)
+// console.log(a(2,3))
+
+// function applyOperation(a, b, opr) {
+//     return opr(a, b);
+// }
+// function add(x, y) {
+//     return x + y;
+// }
+// console.log(applyOperation(2, 3, add));
+
+// function func1(a,b){
+//     function func2(c,d){
+//         return c+d
+//     }
+//     console.log(a+b)
+//     return func2(3,5)
+// }
+// console.log(func1(5,7))
+
+
+
+// function func1(b){
+//     for(i=0;i<b.length;i++){
+//         console.log(b[i])
+//     }
+// }
+// let a = prompt("Enter the String Value");
+// func1(a)
+
+// function func1(a,b,...c){
+//     console.log(a);
+//     console.log(b);
+//     console.log(...c)
+
+// }
+// func1(1,2,3,4,5,6,7,8)
+
+// loginUser()
+//     .then(getProfile)
+//     .then(getPosts)
+//     .then(getComments)
+//     .then(function(comments) {
+//         console.log(comments);
+//     })
+//     .catch(function(error) {
+//         console.log(error);
+//     });
+
+//     loginUser()
+
+// function sayHello() {
+//   return "Hello World";
+// }
+
+// let greeting = sayHello();
+// console.log(greeting)
+
+// function printNumbers(n) {
+
+//     if (n === 0) {
+//         return;
+//     }
+
+//     console.log(n);
+
+//     printNumbers(n - 1);
+// }
+
+// printNumbers(5);
+
+function fibonacci(n) {
+    let first = 0;
+    let second = 1;
+
+    for (let i = 1; i <= n; i++) {
+        console.log(first);
+
+        let next = first + second;
+        first = second;
+        second = next;
+    }
+}
+
+// Take input from the user
+let num = Number(prompt("Enter the number of terms:"));
+
+fibonacci(num);

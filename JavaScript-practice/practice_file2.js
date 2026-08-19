@@ -119,3 +119,13 @@
 // }
 
 // console.log(sortArray([5, 2, 8, 1, 4]));
+
+function* numbers() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+
+const gen = numbers();
+console.log(gen.next().value); 
+console.log(gen.next().value);

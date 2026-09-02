@@ -3,71 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Selector</title>
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selectors */
+        div{
+            /* background-color: rgb(101, 101, 175); */
+        }
+        .blue{ 
+            background-color: rgb(188, 188, 225);
+            color:brown;
+        }
+        /* Child selector */
+        div > p {
+            color:aqua;
+            background-color: red;
+        }
+        div > h3{
+            background-color: blue;
+        }
+
+        /* Descendant Child */
+
+        div h3{
+            background-color: blue;
+        }
+        /* Universal Selectors */
+        *{
+            /* background-color: green; */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selectors */
+
+        a:visited{
+            color: rgb(7, 248, 192);
+        }
+        a:link{
+            color: rgb(177, 8, 81);
+        }
+        a:active{
+            background-color:red;
+        }
+        a:hover{
+            background-color:yellow;
+            color: rgb(47, 9, 9);
+           
+        }
+        p:first-child{
+            background-color:green;
+        }
+
+        p:hover{
+            cursor: pointer;
+        }
+    </style>
 </head>
-<style>
-    /* div{
-        color:red;
-        background-color:yellow
-    } */
-
-
-/* It is class selector */
-     .red{
-        background-color:red;
-     }
-
-     /* ID Selector */
-
- #green{
-    background-color:green;
-
- }
- /* Child Selector => work on direct child */
- /* div> p{
-    color:aqua;
-    background:rgba(188, 180, 85, 0.479)
- } */
-
- /* Descendant Selector => work=> tag space anoter tag*/
-
- div p{
-    color:white;
- }
-
-/* Universal Selector => work on all tag*/
-
-*{
-    margin:0;
-    padding:0;
-}
-
-/* Pseudo Selector */
-a:visited{
- color:rgb(10, 61, 247)
-}
-a:active{
-    color:red;
-}
-a:hover{
-    background:green;
-}
-p:first-child{
-    background-color:blueviolet; 
-}
-</style>
 <body>
-    <h1>This is heading 1</h1>
-    <p>This is peragraph</p>
-    <div id="green">This is container 1
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="blue">This is div one
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, sint?</p>
+        <p>Thi is second Paragraph</p>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore maiores neque officia nobis est eius nostrum in error, temporibus ad?</p>
+            <h3>This is heading three</h3>
+        </article>
+        <a href="https://www.google.com/.">Go to Google</a>
+        <a href="https://www.facebook2.com/">Go to Facebook2</a>
     </div>
-    <div class="red">This is container 2
-       <article> <p> hello another peragraph</p></article>
-      
-    </div>
-    <div>
-     <a href='http://www.google.com'>Goto google</a>
-        </div>
-    </body>
+    <div>This is another div</div>
+</body>
 </html>

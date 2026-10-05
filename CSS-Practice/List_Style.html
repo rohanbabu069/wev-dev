@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,8 +6,8 @@
     <title>List Styling</title>
     <style>
         .box1 ol li {
-            list-style :devanagari;
-            background-color:aqua; /*this property work on content not marker(marker is not included) then we use "list-style-position"*/
+            /* list-style :devanagari; */
+            /* background-color:aqua; this property work on content not marker(marker is not included) then we use "list-style-position" */
             list-style-position:inside ;
             border:2px solid black;
             /* list-style-image:url("https://share.google/9InzprUceCcK3Pytl.") */
@@ -57,5 +57,137 @@
     <td>Row 2, Column 1</td>
   </tr>
 </table>
+</body>
+</html> -->
+
+<style>
+   nav ul li {
+        /* list-style: none; */
+        /* list-style: devanagari; */
+        /* list-style:upper-alpha; */
+        /* list-style-type:"👻"; */
+        /* list-style: none; */
+        /* background-color: blueviolet; */
+        /*list-style-position: inside;    this property is used to make marker inside in the list content*/
+        /* border:2px solid black; */
+        /* list-style: disc inside url(icon1.png); */
+        /* height: 100px;
+        width: 100px; */
+        
+        
+    }
+</style>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Styling</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perform Styling On HTMLTable</title>
+    <style>
+        /* table{
+            border: 2px solid black;
+        } */
+        /* td{
+            border: 2px solid black;
+        } */
+
+        th{
+            border: 2px solid black;
+        }
+        td{
+            border :2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <caption>All Professor List </caption>
+        </thead>
+        <tbody>
+             <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td colspan="2">Rohan Babu</td>
+            <td>Assi. Prof</td>
+            <td>Civil Lines</td>
+        </tr>
+         <tr>
+            <td rowspan="2">Ankur Saxena</td>
+            <td>Assi. Prof</td>
+            <td>MDA</td>
+         </tr>
+         <tr>
+             <td>Ankit Chandra</td>
+            <td>Assi. Prof</td>
+            <td>Hanuman Murti</td>
+         </tr>
+        </tbody>
+        
+       
+         
+         <tfoot></tfoot>
+    </table>
+</body>
+</html> -->
+
+
+<!-- --------------------------------------------Perform Display Property----------------------------- -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+        .box{
+            /* display: inline; */
+            display: inline-block;
+            border: 4px solid black;
+            margin: 30px;
+            padding: 40px;
+        }
+        .box1{
+            /* display: none; it its mean that our box will be disapear but space is also free */
+            /* visibility: hidden; its mean that our box will be disapear but space will remain as it is */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1" style="background-color: aquamarine;">This is a box</div>
+    <div class="box" style="background-color: blue;">This is another box</div>
+    <span>This is 1 span</span>
+    <span>This is 2 span</span>
 </body>
 </html>

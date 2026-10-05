@@ -1,4 +1,4 @@
-#div1{
+/* #div1{
     color:blue
 }
 
@@ -13,4 +13,8 @@ body{
 }
 /* table{
     background-color: red;
-} */
+} */ 
+
+p{
+    background-color: aqua;
+}
